@@ -1,8 +1,5 @@
 // creates a new in-game event. admin level function.
 
-package apis.charith;
-
-import DBConnection;
 import java.sql.*;
 import java.util.Scanner;
 

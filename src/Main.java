@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import apis.charith.*;
 
 public class Main {
 
@@ -22,14 +21,18 @@ public class Main {
             switch (choice) {
 
                 // Charith
-                case "1":  GetPlayerLeaderboard.Client_GetPlayerLeaderboard(scanner);   break;
-                case "2":  GetTopPlayersByLevel.Client_GetTopPlayersByLevel(scanner);   break;
-                case "3":  SearchPlayers.Client_SearchPlayers(scanner);                 break;
+                case "1":
+                case "2":
+                case "3":
+                    printNotImplemented(choice);
+                    break;
                 case "4":  CreateEvent.Client_CreateEvent(scanner);                     break;
-                case "5":  GetActiveEvents.Client_GetActiveEvents(scanner);             break;
-                case "6":  GetPlayerEventCooldown.Client_GetPlayerEventCooldown(scanner); break;
-                case "7":  UseAbility.Client_UseAbility(scanner);                       break;
-                case "8":  GetAbilityCooldowns.Client_GetAbilityCooldowns(scanner);     break;
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                    printNotImplemented(choice);
+                    break;
 
                 // TODO: add other teammates APIs here as they finish them
                 // case "9": Enes stuff
@@ -62,5 +65,9 @@ public class Main {
         System.out.println("8.  Get Ability Cooldowns");
         System.out.println("0.  Quit");
         System.out.print("Enter choice: ");
+    }
+
+    private static void printNotImplemented(String choice) {
+        System.out.println("Option " + choice + " is not implemented yet.");
     }
 }

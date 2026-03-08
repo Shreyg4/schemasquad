@@ -1,4 +1,3 @@
-package apis;
 import java.sql.*;
 import java.util.Scanner;
 // creates a new in-game event. admin level function.

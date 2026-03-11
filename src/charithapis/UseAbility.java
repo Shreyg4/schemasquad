@@ -1,7 +1,10 @@
+package charithapis;
 // Charith Lanka
 
 import java.sql.*;
 import java.util.Scanner;
+
+import dbconnection.DBConnection;
 
 public class UseAbility {
 

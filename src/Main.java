@@ -2,9 +2,9 @@
 // This is the driver program. It shows the menu and calls the right API.
 // To add your API: add a println in printMenu() and a case in the switch below.
 
-import java.util.Scanner;
-import dbconnection.DBConnection;
 import charithapis.*;
+import giseleapis.*;
+import java.util.Scanner;
 import vincentapis.*;
 
 public class Main {
@@ -46,6 +46,13 @@ public class Main {
                 case "12": AddPlayerToParty.Client_AddPlayerToParty(scanner);           break;
                 case "13": RemovePlayerFromParty.Client_RemovePlayerFromParty(scanner); break;
                 case "14": GetPartySuggestions.Client_GetPartySuggestions(scanner);     break;
+                case "15": SearchTeams.Client_SearchTeams(scanner);                     break;
+                case "16": CreateTeam.Client_CreateTeam(scanner);                       break;
+                case "17": AddPlayerToTeam.Client_AddPlayerToTeam(scanner);             break;
+                case "18": RemovePlayerFromTeam.Client_RemovePlayerFromTeam(scanner);   break;
+                case "19": GetTeamDetails.Client_GetTeamDetails(scanner);               break;
+                case "20": UpdateTeamRank.Client_UpdateTeamRank(scanner);               break;
+
                 case "15": CreateTeam.Client_CreateTeam(scanner);                       break;
                 case "16": AddPlayerToTeam.Client_AddPlayerToTeam(scanner);             break;
                 case "17": RemovePlayerFromTeam.Client_RemovePlayerFromTeam(scanner);   break;
@@ -53,7 +60,13 @@ public class Main {
                 case "19": UpdateTeamRank.Client_UpdateTeamRank(scanner);               break;
                 case "20": GetAllTeams.Client_GetAllTeams(scanner);                     break;
                 // --- Gisele's APIs ---
-                // TODO: add cases and call Gisele's Client functions here
+                case "21": GetPlayerInventory.Client_GetPlayerInventory(scanner);       break;
+                case "22": GetRichestPlayers.Client_GetRichestPlayers(scanner);         break;
+                case "23": GetTopPlayersByItem.Client_GetTopPlayersByItem(scanner);     break;
+                case "24": AddItemToInventory.Client_AddItemToInventory(scanner);       break;
+                case "25": RemoveItemFromInventory.Client_RemoveItemFromInventory(scanner); break;
+                case "26": ExecuteTrade.Client_ExecuteTrade(scanner);                   break;
+                case "27": GetTradeHistory.Client_GetTradeHistory(scanner);             break;
 
                 // --- Shreyas's APIs ---
                 // TODO: add cases and call Shreyas's Client functions here
@@ -103,6 +116,13 @@ public class Main {
         System.out.println("20. Get All Teams");
 
         // TODO: Gisele -- add your API names here
+        System.out.println("21. Get Player Inventory");
+        System.out.println("22. Get Richest Players");
+        System.out.println("23. Get Top Players By Item");
+        System.out.println("24. Add Item To Inventory");
+        System.out.println("25. Remove Item From Inventory");
+        System.out.println("26. Execute Trade");
+        System.out.println("27. Get Trade History");
 
         // TODO: Shreyas -- add your API names here
 

@@ -47,8 +47,6 @@ public class ListAllRaces {
             
             if (count == 0) {
                 result.append("No races found.\n");
-            } else {
-                result.append("\nTotal: ").append(count).append(" races\n");
             }
             
             return result.toString();

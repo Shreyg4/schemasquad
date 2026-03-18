@@ -44,8 +44,6 @@ public class ListAllSkinColors {
             
             if (count == 0) {
                 result.append("No skin colors found.\n");
-            } else {
-                result.append("\nTotal: ").append(count).append(" skin colors\n");
             }
             
             return result.toString();

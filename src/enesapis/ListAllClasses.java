@@ -46,8 +46,6 @@ public class ListAllClasses {
             
             if (count == 0) {
                 result.append("No classes found.\n");
-            } else {
-                result.append("\nTotal: ").append(count).append(" classes\n");
             }
             
             return result.toString();

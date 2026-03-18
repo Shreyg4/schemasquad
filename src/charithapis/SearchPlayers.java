@@ -10,7 +10,7 @@ public class SearchPlayers {
 
     // asks user what to search by then calls server
     public static void Client_SearchPlayers(Scanner scanner) {
-        System.out.println("\n--- Search Players ---");
+        System.out.println("\n--- Search Character ---");
         System.out.println("1. By character name");
         System.out.println("2. By class");
         System.out.println("3. By minimum HP");

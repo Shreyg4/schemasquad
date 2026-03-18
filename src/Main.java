@@ -158,8 +158,8 @@ public class Main {
             "  1. Get Player Leaderboard",
             "  2. Get Top Players By Level");
         gap();
-        section("CHARACTER SEARCH",
-            "  3. Search Characters");
+        section("PLAYER SEARCH",
+            "  3. Search Players");
         gap();
         section("EVENTS",
             "  4. Create Event",

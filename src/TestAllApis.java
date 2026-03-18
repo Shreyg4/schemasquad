@@ -252,7 +252,7 @@ public class TestAllApis {
             results.add(runCase(5, "Get Active Events", () ->
                 GetActiveEvents.Server_GetActiveEvents()));
             results.add(runCase(6, "Get Player Event Cooldown", () ->
-                GetPlayerEventCooldown.Server_GetPlayerEventCooldown(charA, eventName)));
+                GetCharacterEventCooldown.Server_GetCharacterEventCooldown(charA, eventName)));
 
             // Abilities
             if (abilityName != null) {

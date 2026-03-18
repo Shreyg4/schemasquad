@@ -6,23 +6,23 @@ import java.util.Scanner;
 
 import dbconnection.DBConnection;
 
-public class GetPlayerEventCooldown {
+public class GetCharacterEventCooldown {
 
     // cooldown is 24 hours after the event ends
     private static final int COOLDOWN_HOURS = 24;
 
     // asks for character name and event name
-    public static void Client_GetPlayerEventCooldown(Scanner scanner) {
-        System.out.println("\n--- Get Player Event Cooldown ---");
+    public static void Client_GetCharacterEventCooldown(Scanner scanner) {
+        System.out.println("\n--- Get Character Event Cooldown ---");
         System.out.print("Character name: ");
         String charName = scanner.nextLine().trim();
         System.out.print("Event name: ");
         String eventName = scanner.nextLine().trim();
-        System.out.println(Server_GetPlayerEventCooldown(charName, eventName));
+        System.out.println(Server_GetCharacterEventCooldown(charName, eventName));
     }
 
     // checks when the character last did the event and calculates time left
-    public static String Server_GetPlayerEventCooldown(String charName, String eventName) {
+    public static String Server_GetCharacterEventCooldown(String charName, String eventName) {
         Connection conn = null;
         try {
             conn = DBConnection.getConnection();

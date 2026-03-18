@@ -39,7 +39,7 @@ public class Main {
                 // Events
                 case "4": CreateEvent.Client_CreateEvent(scanner);                      break;
                 case "5": GetActiveEvents.Client_GetActiveEvents(scanner);              break;
-                case "6": GetPlayerEventCooldown.Client_GetPlayerEventCooldown(scanner); break;
+                case "6": GetCharacterEventCooldown.Client_GetCharacterEventCooldown(scanner); break;
 
                 // Abilities
                 case "7": UseAbility.Client_UseAbility(scanner);                         break;
@@ -164,7 +164,7 @@ public class Main {
         section("EVENTS",
             "  4. Create Event",
             "  5. Get Active Events",
-            "  6. Get Player Event Cooldown");
+            "  6. Get Character Event Cooldown");
         gap();
         section("ABILITIES",
             "  7. Use Ability",
